@@ -32,7 +32,7 @@ class Tr(object):
     START_TEXT = """
 👋 Hi ! {} Selamat Datang di @foto_ebot
 
-**Dengan Bot Ini Anda Dapat Menghosting Gambar Anda Di imgbb.com **
+**Dengan Bot Ini Anda Dapat Menghosting Gambar Anda Di web **
 
 Anda Dapat Mengirim Gambar Sebagai Pesan Terusan Dari Obrolan/Saluran Apa Pun Atau Mengunggahnya Sebagai Foto Atau File.
 
@@ -44,17 +44,17 @@ Anda Dapat Mengirim Gambar Sebagai Pesan Terusan Dari Obrolan/Saluran Apa Pun At
 
 📚 **Framework:** [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-📡 **Hosted On:** [Railway](railway.app)
+📡 **Hosted On:** [Yon](t.me/idnrobot)
 
 👨‍💻 **Developer:** [raiyen](t.me/eueon)
 
-📢 **Updates Channel:** [Damien Soukara](https://t.me/sewuon)
+📢 **Updates Channel:** [LeeYeon](https://t.me/sewuon)
 
 
 ❤ [Donate](https://t.me/rwyan) (Yon)
 """
 
-    HELP_TEXT = """💡 Cukup Kirimkan Saya Foto Anda Dan Saya Akan Mengunggahnya Kepada Anda. Itu dia
+    HELP_TEXT = """💡 Cukup Kirimkan Saya Foto Anda Dan Saya Akan Mengunggahnya untuk Anda.
 
 """
 
