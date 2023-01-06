@@ -1,5 +1,7 @@
-FROM python:3.9
-COPY . /app/
-WORKDIR /app/
+WORKDIR .
+
+COPY requirements.txt .
 RUN pip install -r requirements.txt
-CMD bash start
+
+COPY . .
+CMD ["python3", "main.py"]
