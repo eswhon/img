@@ -30,8 +30,8 @@ Img = Client(
 START_BTN = ikb(
     [
         [
-            ("👾 Tentang", "about"),
-            ("📚 Bantuan", "help"),
+            ("👾 About", "about"),
+            ("📚 Help", "help"),
         ],
         [
             ("👨‍💻 Developer", "https://bio.link/aminesoukara", "url"),
@@ -114,33 +114,33 @@ async def cdata(c, q):
         )
 
         img_path = await r.download()
-        await dwn.edit_text("⭕ Mengunggah ...")
+        await dwn.edit_text("⭕ Uploading ...")
         await dwn.delete()
         try:
             image = Imgclient.upload(file=img_path, expiration=exp, name=filename)
         except Exception as error:
             traceback.print_exc()
             await q.message.reply(
-                f"⚠️ Ups! Ada yang tidak beres!\n\n**•Log: ** {error}"
+                f"⚠️ Ops, Something Went Wrong!\n\n**•Log: ** {error}"
             )
             return
 
         done = f"""
 🔗 LINK : `{image.url}`
 
-📝 NAMA FILE : `{image.filename}`
+📝 FILENAME : `{image.filename}`
 
-💾 UKURAN : {HumanBytes(image.size)}
+💾 SIZE : {HumanBytes(image.size)}
 
-⚠️ HAPUS URL : `{image.delete_url}`
+⚠️ DELETE URL : `{image.delete_url}`
 
-⏳ KADALUARSA : {SecondsToText(int(image.expiration))}
+⏳ EXPIRATION : {SecondsToText(int(image.expiration))}
 """
         imgkb = ikb(
             [
                 [
-                    ("🔗 Buka", image.url, "url"),
-                    ("⚠️ Hapus", image.delete_url, "url"),
+                    ("🔗 Open", image.url, "url"),
+                    ("⚠️ Delete", image.delete_url, "url"),
                 ],
                 [
                     ("❌", "close"),
@@ -190,29 +190,29 @@ async def getimglink(c, m):
     BTN = ikb(
         [
             [
-                ("▫️ 5 Menit", "del_300"),
-                ("▫️ 15 Menit", "del_900"),
-                ("▫️ 30 Menit ", "del_1800"),
+                ("▫️ 5 Minutes", "del_300"),
+                ("▫️ 15 Minutes", "del_900"),
+                ("▫️ 30 Minutes ", "del_1800"),
             ],
             [
-                ("▪️ 1 Jam", "del_3600"),
-                ("▪️ 2 Jam", "del_7200"),
-                ("▪️ 6 Jam", "del_21600"),
-                ("▪️ 12 Jam ", "del_43200"),
+                ("▪️ 1 Hour", "del_3600"),
+                ("▪️ 2 Hours", "del_7200"),
+                ("▪️ 6 Hours ", "del_21600"),
+                ("▪️ 12 Hours ", "del_43200"),
             ],
             [
-                ("◽ 1 Hari", "del_86400"),
-                ("◽ 2 Hari", "del_172800"),
-                ("◽ 3 Hari", "del_259200"),
+                ("◽ 1 Day", "del_86400"),
+                ("◽ 2 Days", "del_172800"),
+                ("◽ 3 Days", "del_259200"),
             ],
             [
-                ("◾ 1 Minggu", "del_604800"),
-                ("◾ 2 Minggu", "del_1209600"),
-                ("◾ 1 Bulan", "del_2629800"),
-                ("◾ 2 Bulan", "del_5259600"),
+                ("◾ 1 week", "del_604800"),
+                ("◾ 2 Weeks", "del_1209600"),
+                ("◾ 1 Month", "del_2629800"),
+                ("◾ 2 Months", "del_5259600"),
             ],
             [
-                ("◻ Jangan Hapus Otomatis ◼", "del_0"),
+                ("◻ Don't AutoDelete ◼", "del_0"),
             ],
             [
                 ("❌", "close"),
@@ -221,7 +221,7 @@ async def getimglink(c, m):
     )
 
     await m.reply_text(
-        "🗑 Hapus Otomatis? ...",
+        "🗑 AutoDelete ? ...",
         reply_markup=BTN,
         quote=True,
     )
