@@ -30,14 +30,15 @@ class Var(object):
 class Tr(object):
 
     START_TEXT = """
-👋 Hi ! {} Welcome To @foto_ebot
+👋 Hi ! {} Selamat Datang di @foto_ebot
 
-**With This Bot You Can Hosts Your Images On imgbb.com **
+**Dengan Bot Ini Anda Dapat Menghosting Gambar Anda Di imgbb.com **
 
-You Can Send An Image As Forwarded Message From Any Chat/Channel Or Upload It As Photo Or File.
+Anda Dapat Mengirim Gambar Sebagai Pesan Terusan Dari Obrolan/Saluran Apa Pun Atau Mengunggahnya Sebagai Foto Atau File.
+
 """
 
-    ABOUT_TEXT = """🤖 **My Name:** [ImgBB](t.me/ImgBBRobot)
+    ABOUT_TEXT = """🤖 **My Name:** [FotoEbot](t.me/foto_ebot)
 
 📝 **Language:** [Python 3](https://www.python.org)
 
@@ -45,25 +46,20 @@ You Can Send An Image As Forwarded Message From Any Chat/Channel Or Upload It As
 
 📡 **Hosted On:** [Railway](railway.app)
 
-👨‍💻 **Developer:** [Amine Soukara](t.me/AmineSoukara)
+👨‍💻 **Developer:** [raiyen](t.me/eueon)
 
-💡 **Source Code:** [Github](https://github.com/AmineSoukara/ImgBB-Bot/fork)
-
-👥 **Support Group:** [Damien Help](https://t.me/DamienHelp)
-
-📢 **Updates Channel:** [Damien Soukara](https://t.me/DamienSoukara)
+📢 **Updates Channel:** [Damien Soukara](https://t.me/sewuon)
 
 
-❤ [Donate](https://www.paypal.me/AmineSoukara) (PayPal)
+❤ [Donate](https://t.me/rwyan) (Yon)
 """
 
-    HELP_TEXT = """💡 Just Send Me Your Photo And I'll Upload it To You .  That's it
+    HELP_TEXT = """💡 Cukup Kirimkan Saya Foto Anda Dan Saya Akan Mengunggahnya Kepada Anda. Itu dia
 
-❤ [Donate](https://www.paypal.me/AmineSoukara) (PayPal)
 """
 
-    ERR_TEXT = "⚠️ API Not Found"
+    ERR_TEXT = "⚠️ API Tidak Ditemukan"
 
-    ERRTOKEN_TEXT = "😶 The Access Token Provided Is Expired, Revoked, Malformed Or Invalid For Other Reasons. DM @AmineSoukara",
+    ERRTOKEN_TEXT = "😶 Token Akses yang Diberikan Kedaluwarsa, Dicabut, Cacat, atau Tidak Valid Karena Alasan Lain. DM @eueon",
 
-    WAIT = "💬 Please Wait !!"
+    WAIT = "💬 Harap tunggu !!"
