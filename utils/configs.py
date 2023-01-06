@@ -32,7 +32,7 @@ class Tr(object):
     START_TEXT = """
 👋 Hi ! {} Selamat Datang di @foto_ebot
 
-**Dengan Bot Ini Anda Dapat Menghosting Gambar Anda Di web **
+**Dengan Bot Ini Anda Dapat mengunggah Gambar Anda Di web **
 
 Anda Dapat Mengirim Gambar Sebagai Pesan Terusan Dari Obrolan/Saluran Apa Pun Atau Mengunggahnya Sebagai Foto Atau File.
 
